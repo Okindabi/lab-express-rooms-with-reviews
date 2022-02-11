@@ -1,0 +1,35 @@
+<div id="form">
+  <h2>Signup</h2>
+  <form action="/signup" method="POST">
+
+    <label>
+      Email Address
+      <input type="text" name="email" placeholder="username" />
+    </label>
+    <br />
+    <label>
+      Password
+      <input type="password" name="password" placeholder="********" />
+    </label>
+    <br />
+    <label>
+      Full Name
+      <input type="text" name="fullName" placeholder="First and Last name" />
+    </label>
+    <br />
+    <label>
+      Slack ID
+      <input type="text" name="slackID" placeholder="optional" />
+    </label>
+    <br />
+    <label>
+      Google ID
+      <input type="text" name="googleID" placeholder="optional" />
+    </label>
+    <br />
+
+    <button type="submit">Create account</button>
+
+    <p>{{errorMessage}}</p>
+  </form>
+</div>

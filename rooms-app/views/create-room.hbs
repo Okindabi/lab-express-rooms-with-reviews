@@ -1,0 +1,21 @@
+<form action="/create-room" method="POST">
+  <label>
+    Room Name
+    <input type="text" name="name" />
+  </label>
+  <label>
+    Description
+    <input type="text" name="description" />
+  </label>
+  <label>
+    Image Url
+    <input type="text" name="imageUrl" />
+  </label>
+  <br />
+  <button type="submit">Make Room!</button>
+
+</form>
+
+{{#if errorMessage}}
+  {{errorMessage}}
+{{/if}}
